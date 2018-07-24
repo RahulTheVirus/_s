@@ -29,8 +29,10 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php thex_post_thumbnail(); ?>
-
+	<?php
+		if ( is_home () || is_category() || is_archive() ) {
+             		thex_post_thumbnail(); }
+          ?>
 	<div class="entry-content">
 		<?php
 		the_content( sprintf(
