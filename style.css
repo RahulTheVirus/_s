@@ -1,7 +1,7 @@
 /*!
 Theme Name: TheX
 Theme URI: https://xjone.bid/
-Author: Automattic
+Author: TheVirus!
 Author URI: https://xjone.bid/
 Description: This is theme called <code>TheX</code>.
 Version: 1.0.0
@@ -22,6 +22,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Typography
 # Elements
 # Forms
+# Site Branding
 # Navigation
 	## Links
 	## Menus
@@ -604,13 +605,20 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Site Branding
+--------------------------------------------------------------*/
+.site-branding{
+	text-align:center;
+	position:relative;
+}
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #0f2ac1;
 }
 
 a:visited {
@@ -618,7 +626,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: green;
 }
 
 a:focus {
@@ -633,6 +641,9 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
+	background-color:#ff5722;
+	margin-bottom:5px;
+	padding:5px 10px;
 	clear: both;
 	display: block;
 	float: left;
@@ -682,6 +693,15 @@ a:hover, a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color:#ffffff;
+	padding:5px 10px;
+}
+
+
+.main-navigation .current-menu-item a{	
+	border-radius:5px;
+	color:#ecf0f1;
+	background-color:#0f2ac1;
 }
 
 /* Small menu. */
@@ -821,6 +841,10 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
+	background-color:#ecf0f1;
+	border-radius:5px;
+	padding:1px 5px;
+
 	/* Make sure select elements fit in widgets. */
 }
 
@@ -828,9 +852,109 @@ a:hover, a:active {
 	max-width: 100%;
 }
 
+.widget ul{
+	list-style-type:none;
+	padding:10px;
+	margin-left:15px;
+}
+
+.widget ul li{
+	list-style-type:circle;
+}
+
+.widget h2{
+	color:#673ab7;
+	padding:5px;
+	border-radius:10px;
+	margin-bottom:0px;
+	font-weight:400;
+	font-size:20px;
+	text-align:center;
+	line-height:25px;
+	border-style:solid;
+	border-color:#2196f3;
+}
+
+.search-form label input[type=search]{
+	width:70% !important;
+	min-width:100px;
+}
+
+.widget form{
+	padding:10px;	
+}
+
+
+
+
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+#primary{
+    margin-right:1px;
+	width:71%;
+	float:left;
+	background-color:#ecf0f1;
+	padding:20px 10px;
+}
+
+#secondary{
+    margin-left:1px;
+	float:right;
+	width:28%;
+}
+
+@media screen and (max-width: 640px) {
+    #primary{
+	    width:100%;
+    }
+
+    #secondary{
+	    width:100%;
+    }
+}
+
+/*--------------------------------------------------------------
+## Extrea
+--------------------------------------------------------------*/
+
+.readmore{
+	color:#ffffff;
+	background-color:#2ecc71;
+	font-weight:700;
+	line-height:20px;
+}
+
+article{
+	display: block;
+    max-width:600px;
+    width:100%;
+	padding:20px;
+	border-bottom-color:#3f51b5;
+	border-bottom-style:solid;
+	border-bottom-width:10px;
+	border-radius:2px;
+}
+
+/*--------------------------------------------------------------
+## Breadcrumbs
+--------------------------------------------------------------*/
+
+
+#breadcrumbs .breadcrumbs{
+	height:100px;
+	color:#ffffff;
+	background-color:#2ecc71;
+	text-align:center;
+	font-size:18px;
+	font-weight:700;
+	padding:40px;
+	line-height:25px;
+	font-style:italic;	
+}
+
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -840,6 +964,15 @@ a:hover, a:active {
 
 .hentry {
 	margin: 0 0 1.5em;
+}
+
+.hentry .entry-content{
+	margin-top:1px;
+}
+
+.hentry .post-thumbnail img{
+	width:400px;
+	height:200px ;
 }
 
 .updated:not(.published) {
@@ -868,6 +1001,24 @@ a:hover, a:active {
 	display: block;
 }
 
+#cancel-comment-reply-link,
+.comment-reply-link,
+.comment-edit-link{
+    float:right;;
+	padding:2px 10px;
+	border-style:solid;
+	border-color:#2196f3;
+	background-color:#ffffff;
+	border-radius:20px;
+	display:block;
+	margin-right: 20px;
+	position:relative;
+	bottom:25px;
+}
+
+#cancel-comment-reply-link{
+	margin-top:20px;
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
