@@ -133,6 +133,11 @@ function thex_scripts() {
 add_action( 'wp_enqueue_scripts', 'thex_scripts' );
 
 /**
+ * Implement the Custom functions
+ */
+require get_template_directory() . '/inc/thex-custom-functions.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
