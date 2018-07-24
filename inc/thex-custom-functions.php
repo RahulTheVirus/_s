@@ -17,7 +17,7 @@ if ( ! function_exists( 'thex_custom_excerpt_length' ){
 }
       // add more link to excerpt
 
- if ( ! function_exists( 'thex_custom_excerpt_more' )
+ if ( ! function_exists( 'thex_custom_excerpt_more' ){
       function thex_custom_excerpt_more($more) {
          global $post;
          return '... <a class="more-link" href="'. get_permalink($post->ID) . '">'. __(' <button class="readmore"><i class="fa fa-angle-double-right"></i> Read More</button>', 'thex') .'</a>';
