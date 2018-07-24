@@ -6,8 +6,7 @@
  *
  * @package TheX
  */
-
-?>
+    ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -33,8 +32,12 @@
 		if ( is_home () || is_category() || is_archive() ) {
              		thex_post_thumbnail(); }
           ?>
+
 	<div class="entry-content">
-		<?php
+	<?php
+	    if ( is_home () || is_category() || is_archive() ) {
+               		the_excerpt('');
+            } else {
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
@@ -47,12 +50,12 @@
 			),
 			get_the_title()
 		) );
-
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'thex' ),
 			'after'  => '</div>',
 		) );
-		?>
+    }
+	?> 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
