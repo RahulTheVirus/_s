@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: TheX
 Theme URI: https://xjone.bid/
 Author: TheVirus!
@@ -31,8 +31,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Clearings
 # Widgets
 # Content
+	## Breadcrumbs
 	## Posts and pages
 	## Comments
+	## Extrea
 # Infinite scroll
 # Media
 	## Captions
@@ -916,44 +918,8 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-## Extrea
---------------------------------------------------------------*/
-
-.readmore{
-	color:#ffffff;
-	background-color:#2ecc71;
-	font-weight:700;
-	line-height:20px;
-}
-
-article{
-	display: block;
-    max-width:600px;
-    width:100%;
-	padding:20px;
-	border-bottom-color:#3f51b5;
-	border-bottom-style:solid;
-	border-bottom-width:10px;
-	border-radius:2px;
-}
-
-/*--------------------------------------------------------------
 ## Breadcrumbs
 --------------------------------------------------------------*/
-
-
-#breadcrumbs .breadcrumbs{
-	height:100px;
-	color:#ffffff;
-	background-color:#2ecc71;
-	text-align:center;
-	font-size:18px;
-	font-weight:700;
-	padding:40px;
-	line-height:25px;
-	font-style:italic;	
-}
-
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1019,6 +985,30 @@ article{
 #cancel-comment-reply-link{
 	margin-top:20px;
 }
+
+/*--------------------------------------------------------------
+## Extrea
+--------------------------------------------------------------*/
+
+.readmore{
+	color:#ffffff;
+	background-color:#2ecc71;
+	font-weight:700;
+	line-height:20px;
+}
+
+article{
+	display: block;
+    max-width:600px;
+    width:100%;
+	padding:20px;
+	border-bottom-color:#3f51b5;
+	border-bottom-style:solid;
+	border-bottom-width:10px;
+	border-radius:2px;
+}
+
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
