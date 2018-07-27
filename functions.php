@@ -16,6 +16,21 @@ if ( ! function_exists( 'thex_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function thex_setup() {
+	    
+	/**   
+	 * Load the TGM Plugins Activation init if it exists
+	 */
+    if (  file_exists( get_template_directory() . '/assert/tgmpa/thex-plugins-init.php' ) ) {
+        require_once get_template_directory() . '/assert/tgmpa/thex-plugins-init.php';
+    }
+
+    /**
+	 * Add Redux Framework
+	 */
+	if ( class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/assert/framework/thex-framework-init.php' ) ) {
+        require_once dirname( __FILE__ ) . '/assert/framework/thex-framework-init.php'; 
+    }
+    
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
