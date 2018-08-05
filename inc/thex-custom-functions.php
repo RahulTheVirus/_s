@@ -22,3 +22,12 @@ if ( ! function_exists( 'thex_custom_excerpt_length' )):
       }
     add_filter('excerpt_more', 'thex_custom_excerpt_more');
 endif;
+
+// Back to top button 
+if ( ! function_exists( 'thex_back_to_top' )){
+    function thex_back_to_top() {
+        wp_enqueue_script('back-to-top', get_stylesheet_directory_uri() . '/js/backtopbtn.js');
+    }
+}
+add_action( 'wp_enqueue_scripts', 'thex_back_to_top' );
+

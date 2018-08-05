@@ -29,6 +29,9 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+	 <!-- Back to top -->
+	 <div onclick="topFunction()" id="backtopbtn" title="Go to top"><img src="<?php echo get_stylesheet_directory_uri() . '/assert/img/totop.png' ?>" /></div>
+	 <!--/Back to top -->
 
 <?php wp_footer(); ?>
 

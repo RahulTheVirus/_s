@@ -34,7 +34,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Breadcrumbs
 	## Posts and pages
 	## Comments
-	## Extrea
+## Extrea
+	## Read More
+	## Article
+	## Back To Top
 # Infinite scroll
 # Media
 	## Captions
@@ -1008,6 +1011,30 @@ article{
 	border-radius:2px;
 }
 
+/*--------------------------------------------------------------
+## Back To Top 
+--------------------------------------------------------------*/
+
+#backtopbtn{
+    display:none;
+	float:right;
+	right:10%;
+	bottom:50px;
+	position:fixed;
+	z-index:99;
+	border-radius:5px;
+	padding:15px;
+	background-color:rgba(255,255,255,0.59);
+	border-style:solid;
+	border-color:#ff2400;
+	font-weight:700;
+	font-size:20px;
+}
+
+#backtopbtn:hover{
+    background-image:linear-gradient(to right, #40e0d0 0%, #ff8c00 33%, #ff0080 100%);
+	border-color: #03a9f4;
+}
 
 /*--------------------------------------------------------------
 # Infinite scroll
