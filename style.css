@@ -931,15 +931,18 @@ a:hover, a:active {
 	display: block;
 }
 
-.hentry {
+.post,
+.page {
 	margin: 0 0 1.5em;
 }
 
-.hentry .entry-content{
+.post,
+.page .entry-content{
 	margin-top:1px;
 }
 
-.hentry .post-thumbnail img{
+.post,
+.page .post-thumbnail img{
 	width:400px;
 	height:200px ;
 }
